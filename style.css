@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    text-decoration: none;
+    list-style: none;
+}
+
+.page{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg,#79e5d6,#9eafe5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todoapp{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.title h2{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.title i{
+    color: white;
+    font-size: 30px;
+}
+
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.input input{
+    background-color: white;
+    border-radius: 6px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.input button{
+    background: linear-gradient(90deg, #06a8f3, #2888d2);
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 6px;
+}
+
+.list ul li{
+    background-color: white;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+.list ul li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list ul li button{
+    height: 40px;
+    width: 50px;
+}
