@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,16 +7,16 @@
     list-style: none;
 }
 
-.page{
+body {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(90deg,#79e5d6,#9eafe5);
+    background: linear-gradient(90deg, #79e5d6, #9eafe5);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.todoapp{
+.todoapp {
     width: 500px;
     display: flex;
     flex-direction: column;
@@ -24,26 +24,26 @@
     align-items: center;
 }
 
-.title{
+.title {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-.title h2{
+.title h2 {
     color: white;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 500;
 }
 
-.title i{
+.title i {
     color: white;
     font-size: 30px;
 }
 
-.input{
+.input {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,41 +51,71 @@
     margin-bottom: 15px;
 }
 
-.input input{
+.input input {
     background-color: white;
     border-radius: 6px;
     border: none;
     width: 250px;
     height: 40px;
     padding-left: 10px;
+    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
 }
 
-.input button{
+.input button {
     background: linear-gradient(90deg, #06a8f3, #2888d2);
     height: 40px;
     width: 40px;
     border: none;
     border-radius: 6px;
+    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
 }
 
-.list ul li{
+ul li {
     background-color: white;
-    width: 250px;
+    width: 298px;
     height: 40px;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
-    padding-left: 10px;
+    margin-top: 15px;
+    padding-left: 15px;
+    border-radius: 2px;
+    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
 }
 
-.list ul li div{
+ul li div {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
 }
 
-.list ul li button{
+ul li div p {
+    position: relative;
+    color: #2f2f35;
+    font-size: 15px;
+}
+
+ul li button {
     height: 40px;
     width: 50px;
+    background-color: #fe0100;
+    border: none;
+    border-radius: 2px;
+}
+
+ul li.completed div p::before {
+    position: absolute;
+    content: "";
+    background-color: #3da9d0;
+    width: 170px;
+    height: 3px;
+    top: 50%;
+    left: -10px;
+}
+
+input[type="checkbox"] {
+    transform: scale(2);
+    margin-top: 2.5px;
+    accent-color: #3da9d0;
 }
